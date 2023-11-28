@@ -8,7 +8,9 @@ const RankingList = ({ ranking }) => {
             className="flex  justify-between my-2 px-10"
           >
             <span className="text-red-500 ">{index + 1}</span>
-            <p className="ml-2">{el.name}</p>
+             <p className="ml-2 max-w-[80px] overflow-hidden max-h-6">
+              {el.name}
+            </p>
             <span className="ml-2 ">{el.score}</span>
           </li>
         ))}
