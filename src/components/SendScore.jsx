@@ -19,6 +19,7 @@ const SendScore = ({ score, onClick }) => {
       <input
         onChange={(e) => dispatch(gameAction.getPlayerName(e.target.value))}
         required
+        maxLength={9}
         type="text"
         className="border-8 border-double border-black my-3 px-1 w-52 text-center"
         placeholder="your name"
